@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Sistema de Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Relatório</h1>
+        </header>
+        <main>
+            <form action="download_report.html" method="post">
+                <div class="input-group">
+                    <label for="periodo">Período</label>
+                    <input type="month" id="periodo" name="periodo" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipoRelatorio">Tipo de Relatório</label>
+                    <select id="tipoRelatorio" name="tipoRelatorio" required>
+                        <option value="vendas">Vendas</option>
+                        <option value="estoque">Estoque</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="fornecedores">Fornecedores</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Gerar Relatório</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

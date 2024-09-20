@@ -1,275 +1,210 @@
+/* Elementos gerais */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+    background-color: rgba(215, 233, 255, 0.88);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width:600px
+/* Elementos gerais fim */
+
+
+/* Elementos login */
+#texto_log {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: #e0f2f7;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  line-height: 50px;
-  color: #333;
-  font-size: 24px;
+#caixalog {
+    width: 120px;
+    height: 122px;
+    border-radius: 10px;
+    background-color: #BCDFFF;
+    padding: 10px;
+    margin-left: 100px;
 }
 
-.input-field {
-  margin-bottom: 15px;
+#caixalog img {
+    width: 100%; 
+    height: auto;
+    margin-left: 15px;
 }
 
-.input-field input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-  font-size: 16px;
+#tela_login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  cursor: pointer;
+#tela_login label {
+    margin-right: 750px;
 }
 
-.btn:hover {
-  background-color: #45a049;
-}
-</style>
-////////////////////////////////////////////////////Fincanceiro CSS///////////////////////////////////////////////////////////////
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  display: flex;
+.inputs {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8F8F8F;
+    background: #EDF0F2;
 }
 
-.sidebar {
-  width: 20%;
-  background-color: #f1f1f1;
-  padding: 20px;
-  height: 100vh;
+#botao-login {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #58A6FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.content {
-  width: 80%;
-  padding: 20px;
+#botao-login:hover {
+    background-color: #4795e5;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Elementos login fim */
+
+
+/* Elementos da tela principal */
+#pagina_principal {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
-.header h1 {
-  margin: 0;
+#barra-lateral {
+    width: 250px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-.header .search-bar {
-  display: flex;
-  align-items: center;
+#barra-lateral h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.header .search-bar input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+#barra-lateral ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.header .search-bar .search-icon {
-  margin-left: 8px;
-  cursor: pointer;
+#barra-lateral ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
-.dashboard-stats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+#barra-lateral ul li img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E0E0E0; /* Placeholder para imagens */
 }
 
-.dashboard-stat {
-  width: 150px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
+#barra-lateral ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
 }
 
-.dashboard-stat .icon {
-  font-size: 24px;
-  color: #333;
+#barra-lateral ul li a:hover {
+    color: #007BFF;
 }
 
-.dashboard-stat .value {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
+#conteudo_principal {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.dashboard-stat .label {
-  margin-top: 5px;
+#conteudo_principal h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
-.recent-activity {
-  margin-top: 20px;
+#stock-report {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Espaçamento extra entre gráfico e menu */
 }
 
-.recent-activity h2 {
-  margin-bottom: 10px;
+#usuario_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    background-color: #F7F7F7;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.activity-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
+#usuario_info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-.activity-item .icon {
-  margin-right: 10px;
+#usuario_info p {
+    margin: 0;
+    font-size: 16px;
 }
 
-.activity-item .details {
-  flex-grow: 1;
+/* Elementos da tela principal fim */
+
+
+/* Elementos gerais (relatórios e fornecedores) */
+#geral {
+    padding: 25%;
+    margin: 20px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 85%;
+
 }
 
-.activity-item .details .title {
-  font-weight: bold;
+#geral ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.activity-item .details .time {
-  font-size: 12px;
-  color: #666;
+#geral ul li {
+    margin-bottom: 15px;
 }
 
-.fast-moving-items {
-  margin-top: 20px;
+#geral ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
 }
 
-.fast-moving-items h2 {
-  margin-bottom: 10px;
+#geral ul li a:hover {
+    color: #007BFF;
 }
 
-.fast-moving-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  width: 150px;
-}
-
-.fast-moving-item .icon {
-  margin-right: 10px;
-}
-
-.fast-moving-item .title {
-  font-weight: bold;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination button {
-  padding: 8px 12px;
-  margin: 0 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.pagination .active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.user-profile .user-info {
-  display: flex;
-  align-items: center;
-}
-
-.user-profile .user-info img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.user-profile .user-info .name {
-  font-weight: bold;
-}
-
-.user-profile .user-info .role {
-  font-size: 12px;
-  color: #666;
-}
-
-.sidebar-menu {
-  margin-top: 20px;
-}
-
-.sidebar-menu li {
-  list-style: none;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.sidebar-menu li.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.sidebar-menu li i {
-  margin-right: 10px;
-}
-
-.sidebar-menu li .title {
-  font-weight: bold;
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-</style>
+/* Elementos gerais fim */
