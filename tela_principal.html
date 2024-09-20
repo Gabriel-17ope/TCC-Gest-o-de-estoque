@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Login</title>
-  <link rel="stylesheet" href="estilosPrincipal.css">
-  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Login</h2>
-    <form>
-      <div class="Login">
-        <input type="text" placeholder="Login de Usuário" required>
-      </div>
-      <div class="Senha">
-        <input type="password" placeholder="Senha" required>
-      </div>
-      <button type="Entrar">Entrar</button>
-    </form>
-  </div>
+    <div id="pagina_principal">
+
+        <!-- Barra lateral -->
+        <div id="barra-lateral">
+            <h3>Itens mais vendidos</h3>
+            <ul>
+                <!-- Substituir img src com os placeholders ou imagens reais no futuro -->
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Macbook Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Iphone 14 Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Zoom75</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Airpods Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Samsung Galaxy Fold</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Samsung Odyssey</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Logitech Superlight</li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div id="conteudo_principal">
+            <div id="usuario_info">
+                <img src="imagens/avatar.png" alt="Bryan Doe">
+                <p>Bryan Doe <br> Admin</p>
+            </div>
+
+            <h2>Stock Report</h2>
+            
+            <!-- Área onde o gráfico será gerado pelo back-end -->
+            <div id="stock-report">
+                <!-- O gráfico será gerado dinamicamente aqui -->
+                <img src="imagens/stock_report_placeholder.png" alt="Gráfico de estoque">
+            </div>
+
+            <!-- Parte Geral (Menu lateral para relatórios e fornecedores) -->
+            <div id="geral">
+                <ul>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                    <li><a href="Tela_estoque.html">Estoque</a></li>
+                    <li><a href="Tela_fornecedor.html">Fornecedor</a></li>
+                    <li><a href="Tela_financeiro.html">Financeiro</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
