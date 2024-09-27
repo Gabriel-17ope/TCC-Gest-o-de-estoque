@@ -1,0 +1,299 @@
+/* Elementos gerais */
+body {
+    background-color: rgba(203, 215, 229, 0.88);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+    padding-right: 200px
+}
+
+#pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alinha a página à esquerda */
+    background: #fff;
+}
+
+#cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background: rgba(244, 246, 252, 1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.pesquisa {
+    background: #FFFFFF;
+    border: 4px solid #CCC;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input {
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+.pesquisa i {
+    margin-left: 10px;
+}
+
+#dados_usuario {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#dados_usuario img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#dados_usuario h1 {
+    font-size: larger;
+    margin: 0;
+}
+
+#dados_usuario p {
+    font-size: medium;
+    color: rgba(92, 111, 136, 1);
+    margin: 0;
+}
+
+#dados_usuario_nomes {
+    display: flex;
+    flex-direction: column;
+}
+
+#divisao {
+    background: #333;
+    height: 25px;
+    width: 100%;
+    margin-top: 0px;
+}
+/*parte do centro */
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start; /* Alinha conteúdo à esquerda */
+    margin-left: 50px; /* Ajuste o quanto deseja a distância da margem */
+}
+
+#conteudo h1 {
+    font-size: x-large;
+}
+
+#vendas {
+    display: flex;
+    justify-content: space-around; /* Espaça as divs igualmente */
+    width: 100%; /* O contêiner de vendas ocupa toda a largura */
+    margin-top: 20px;
+    
+
+}
+
+
+.status_venda {
+    width: 100px;
+    background: rgba(244, 245, 252, 1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto dentro das divs */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Estilo opcional para melhorar a aparência */
+}
+.status_venda p{
+    font-size: 15px;
+}
+
+#meio{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+/*parte do centro fim */
+/* Estilos da barra lateral */
+#barra_lateral {
+    width: 20%; /* A barra lateral ocupa 25% da largura */
+    background-color: #f4f6f8;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 580px;
+}
+
+#barra_lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra_lateral ul li {
+    margin-bottom: 20px;
+}
+
+#barra_lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#barra_lateral ul li a:hover {
+    color: #007bff;
+}
+#tabela-pagi{
+    display: flex;
+    flex-direction: column;
+}
+/* Estilização da tabela */
+.table-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f4f6f8;
+}
+
+thead th {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+tbody a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .prev, .pagination .next {
+    font-weight: bold;
+}
+
+.pagination .prev {
+    margin-right: 10px;
+}
+
+.pagination .next {
+    margin-left: 10px;
+}
+
+#atividades_recentes {
+    width: 20%; /* Ajuste conforme necessário para caber entre a barra lateral e a tabela */
+    padding: 20px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+#atividades_recentes h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.lista_atividades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista_atividades li {
+    padding: 9px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista_atividades li p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.lista_atividades li span {
+    color: #999;
+    font-size: 12px;
+}
+.lista_atividades img{
+    height: 20px;
+}
+

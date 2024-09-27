@@ -1,0 +1,181 @@
+/* Elementos gerais */
+body {
+    background-color: rgba(215, 233, 255, 0.88);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+}
+
+.divisao{
+    background: #333;
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 102%;
+    top: 12%;
+}
+
+/* Elementos login fim */
+
+
+/* Estilos para a tela principal */
+.pagina_principal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#barra-lateral_direita {
+    width: 240px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#barra-lateral_direita h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#barra-lateral_direita ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra-lateral_direita ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#barra-lateral_direita ul li img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E0E0E0; /* Placeholder para imagens */
+}
+
+#barra-lateral_direita ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+#barra-lateral_direita ul li a:hover {
+    color: #007BFF;
+}
+
+#conteudo_principal {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Para espaçar entre os elementos */
+}
+
+#conteudo_principal h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#stock-report {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Espaçamento extra entre gráfico e menu */
+}
+
+#usuario_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui o espaço entre a barra de pesquisa e o avatar */
+    padding: 20px;
+    width: 110%;
+    background-color: #F7F7F7;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#usuario_info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 700px;
+}
+
+#usuario_info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#geral {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 30px;
+    margin-left: 90%;
+    margin-top: -300px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    width: 150px;
+    padding-top: 20%;
+    margin-bottom: -20px;
+}
+#geral h1{
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+#geral ul {
+    list-style-type: none;
+    padding: 10;
+}
+
+#geral ul li {
+    margin-bottom: 15px;
+}
+
+#geral ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+#geral ul li a:hover {
+    color: #007BFF;
+}
+
+.pesquisa {
+    background: #FFFFFF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 25%;
+    margin-right: 20px;
+    font-size: 14px;
+    margin-left: 290px;
+}
+.pesquisa input{
+    border: none;
+    width: 300px;
+}
+.pesquisa i{
+    margin-left: 10px;
+}
