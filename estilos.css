@@ -1,275 +1,111 @@
+/* Elementos gerais */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+    background-color: rgba(215, 233, 255, 0.88);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
 }
 
-.container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width:600px
+.divisao {
+    background: #333;
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 102%;
+    top: 12%;
 }
 
-.icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: #e0f2f7;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  line-height: 50px;
-  color: #333;
-  font-size: 24px;
+.pagina_principal {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
-.input-field {
-  margin-bottom: 15px;
+.barra-lateral_esquerda {
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 240px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.input-field input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-  font-size: 16px;
+.barra-lateral_esquerda h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  cursor: pointer;
+.barra-lateral_esquerda ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.btn:hover {
-  background-color: #45a049;
-}
-</style>
-////////////////////////////////////////////////////Fincanceiro CSS///////////////////////////////////////////////////////////////
-body {
-  font-family: Arial, sans-serif;
+.barra-lateral_esquerda ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.container {
-  display: flex;
+.barra-lateral_esquerda ul li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
 }
 
-.sidebar {
-  width: 20%;
-  background-color: #f1f1f1;
-  padding: 20px;
-  height: 100vh;
+.barra-lateral_esquerda ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
 }
 
-.content {
-  width: 80%;
-  padding: 20px;
+.barra-lateral_esquerda ul li a:hover {
+    color: #007BFF;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.pesquisa {
+    background: #FFFFFF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 25%;
+    margin-right: 20px;
+    font-size: 14px;
 }
 
-.header h1 {
-  margin: 0;
+.pesquisa input {
+    border: none;
+    width: 300px;
 }
 
-.header .search-bar {
-  display: flex;
-  align-items: center;
+.pesquisa i {
+    margin-left: 10px;
 }
 
-.header .search-bar input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.usuario_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #F7F7F7;
+    width: 100%;
+    position: relative;
+    top: 0;
 }
 
-.header .search-bar .search-icon {
-  margin-left: 8px;
-  cursor: pointer;
+.usuario_info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-.dashboard-stats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+.usuario_info p {
+    margin: 0;
+    font-size: 16px;
 }
-
-.dashboard-stat {
-  width: 150px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.dashboard-stat .icon {
-  font-size: 24px;
-  color: #333;
-}
-
-.dashboard-stat .value {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.dashboard-stat .label {
-  margin-top: 5px;
-}
-
-.recent-activity {
-  margin-top: 20px;
-}
-
-.recent-activity h2 {
-  margin-bottom: 10px;
-}
-
-.activity-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.activity-item .icon {
-  margin-right: 10px;
-}
-
-.activity-item .details {
-  flex-grow: 1;
-}
-
-.activity-item .details .title {
-  font-weight: bold;
-}
-
-.activity-item .details .time {
-  font-size: 12px;
-  color: #666;
-}
-
-.fast-moving-items {
-  margin-top: 20px;
-}
-
-.fast-moving-items h2 {
-  margin-bottom: 10px;
-}
-
-.fast-moving-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  width: 150px;
-}
-
-.fast-moving-item .icon {
-  margin-right: 10px;
-}
-
-.fast-moving-item .title {
-  font-weight: bold;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination button {
-  padding: 8px 12px;
-  margin: 0 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.pagination .active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.user-profile .user-info {
-  display: flex;
-  align-items: center;
-}
-
-.user-profile .user-info img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.user-profile .user-info .name {
-  font-weight: bold;
-}
-
-.user-profile .user-info .role {
-  font-size: 12px;
-  color: #666;
-}
-
-.sidebar-menu {
-  margin-top: 20px;
-}
-
-.sidebar-menu li {
-  list-style: none;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.sidebar-menu li.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.sidebar-menu li i {
-  margin-right: 10px;
-}
-
-.sidebar-menu li .title {
-  font-weight: bold;
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-</style>

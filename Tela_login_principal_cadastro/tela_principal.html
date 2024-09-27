@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="Login_principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="divisao"> </div>
+    <div class="pagina_principal">
+        <!-- Barra lateral -->
+        <div id="barra-lateral_direita">
+            <h3>Itens mais vendidos</h3>
+            <ul>
+                <!-- Substituir img src com os placeholders ou imagens reais no futuro -->
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Macbook Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Iphone 14 Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Zoom75</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Airpods Pro</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Samsung Galaxy Fold</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Samsung Odyssey</li>
+                <li><img src="imagens/placeholder.png" alt="Placeholder"> Logitech Superlight</li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div id="conteudo_principal">
+            <div id="usuario_info">
+                <div class="pesquisa">
+                    <input type="search" name="pesquisa" placeholder="pesquisa...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <img src="imagens/avatar.png" alt="Bryan Doe">
+                <p>Bryan Doe <br> Admin</p>
+            </div>
+
+            <h2>Stock Report</h2>
+            
+            <!-- Área onde o gráfico será gerado pelo back-end -->
+            <div id="stock-report">
+                <p>grafico</p>
+                <!-- O gráfico será gerado dinamicamente aqui -->
+                <img src="imagens/stock_report_placeholder.png" alt="Gráfico de estoque">
+            </div>
+
+            <!-- Parte Geral (Menu lateral) -->
+            <div id="geral">
+                <ul>
+                    <h1> Geral</h1>
+
+                    <li><img href="estoque.html" src="../imagens/icon-relatorio.png" alt=" Relatório" >
+                        <a href="../Tela_estoque.html">Relatório</a></li>
+                    <li><img src="../imagens/icon-estoque.png" alt=" Estoque">
+                        <a href="../Tela_estoque.html">Estoque</a></li>
+                    </li>
+                    <li><img src="../imagens/icon-fornecedores.png" alt="Fornecedores">
+                        <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
+                    </li>
+                    <li><img src="../imagens/icon-financeiro.png" alt=" Financeiro">
+                        <a href="../Tela_financeiro.html">Financeiro</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
