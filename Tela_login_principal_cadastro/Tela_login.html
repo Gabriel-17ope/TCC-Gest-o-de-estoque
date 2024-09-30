@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
-    <link rel="stylesheet" href="Login_principal.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
         <div id="quadros">
-            <div id="texto_log">
-                <p id="log">Login </p>
-
-                    <div id="caixalog"> 
-                        <img src="imagens/Name.png" alt="iconedepessoa"> 
-                    </div>
-            </div>
-        <!-----Parte dos inputs-->
-            <div id="tela_login">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" class="inputs">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" class="inputs">
-                <button id="botao-login">Login </button>
-            </div>
-
+            <div id="caixa_a">
+                    <h1>Login</h1>
+                    <img src="../imagens/Name.png" alt="">
+    
+                    
+            </div>    
+                    <!-----Parte dos inputs-->
+                <div id="caixa_login">
+                    <form>
+                        <div class="input-box">
+                            <input type="text" placeholder="Usuário" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Senha" required>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+    
+            
 
         </div>
 </body>
