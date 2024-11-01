@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financeiro</title>
-    <link rel="stylesheet" href="Financeiro.css">
+    <link rel="stylesheet" href="/static/css/Financeiro.css">
+    <link rel="stylesheet" href="/static/css/estilos_principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <div id="cabeçalho">
-        <div>
-            <p> Financeiro</p>
-            <div class="pesquisa">
-                <input type="search" name="pesquisa" placeholder="pesquisa...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+    <header>
+        <p>Financeiro</p>
+        <div class="pesquisa_caixa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="pesquisa" placeholder="pesquisa...">
         </div>
+
+        <button class="btn"> <i class="fa-solid fa-circle-plus"></i> Adicionar Produto</button>
+
         <div id="dados_usuario">
             <img src="../imagens/Name.png" alt="Bryan Doe">
             <div id="dados_usuario_nomes">
@@ -23,7 +25,7 @@
                 <p>admin</p>
             </div>
         </div>
-    </div>
+    </header>
     <div id="divisao"></div>
     <div id="pagina">
         <!-- Conteúdo principal -->

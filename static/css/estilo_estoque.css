@@ -1,0 +1,12 @@
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+thead{
+    display: flex;
+    background: white;
+    flex-direction: row;
+    width: 1024px;
+    
+}
