@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" />
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="profile">
+        <img src="profile-image-url" alt="Foto de perfil" class="profile-img">
+        <h4>Bryan Doe</h4>
+        <p>Admin</p>
+    </div>
+    <nav class="nav-links">
+        <a href="#" class="active"><i class="icon"></i> Estoque</a>
+        <a href="#"><i class="icon"></i> Fornecedores</a>
+        <a href="#"><i class="icon"></i> Financeiro</a>
+    </nav>
+</div>
+  <div class="main-content">
+    <!-- Conteúdo principal da página -->
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- SVG path content -->
+              </svg>
+            </div>
+            <h2>Estoque</h2>
+          </div>
+          <label class="search-bar">
+            <div class="search-input-container">
+              <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </div>
+              <input type="text" placeholder="Search" class="search-input" />
+            </div>
+          </label>
+        </div>
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a href="#">Geral</a>
+            <a href="#">Relatorio</a>
+          </div>
+          <button class="add-product-button">Adicionar Produto</button>
+          <div class="profile-pic" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/d205c5d1-54e8-40b7-94cd-e38260317f50.png');"></div>
+        </div>
+      </header>
+      <main>
+        <h1 class="title">Lista de produtos</h1>
+        <div class="product-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Macbook Pro</td>
+                <td>#0001</td>
+                <td>Laptop</td>
+                <td>$1,241</td>
+                <td>44</td>
+                <td><div class="product-image" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/c4dffc00-551e-483c-bb1d-b7918f611e04.png');"></div></td>
+              </tr>
+              <tr>
+                <td>iPhone 14 pro</td>
+                <td>#0002</td>
+                <td>Phone</td>
+                <td>$1,499</td>
+                <td>23</td>
+                <td><div class="product-image" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/78ed3d88-cd8d-4dbf-8dab-cf6bf329941c.png');"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
