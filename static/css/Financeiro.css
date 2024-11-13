@@ -21,13 +21,6 @@ p {
     padding-right: 200px
 }
 
-#pagina {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Alinha a página à esquerda */
-
-}
-
 #cabeçalho {
     display: flex;
     flex-direction: row;
@@ -132,30 +125,29 @@ p {
 
 /*parte do centro fim */
 /* Estilos da barra lateral */
-#barra_lateral {
+.barra_lateral {
     width: 20%; /* A barra lateral ocupa 25% da largura */
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     height: 580px;
 }
 
-#barra_lateral ul {
+.barra_lateral ul {
     list-style-type: none;
     padding: 0;
 }
 
-#barra_lateral ul li {
+.barra_lateral ul li {
     margin-bottom: 20px;
 }
 
-#barra_lateral ul li a {
+.barra_lateral ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
     font-weight: bold;
 }
 
-#barra_lateral ul li a:hover {
+.barra_lateral ul li a:hover {
     color: #007bff;
 }
 #tabela-pagi{

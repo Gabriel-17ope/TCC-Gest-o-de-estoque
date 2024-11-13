@@ -3,87 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Estoque</title>
     <link rel="stylesheet" href="/static/css/estilo_estoque.css">
-
-
     <link rel="stylesheet" href="/static/css/estilos_principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <div class="divisao"> </div>
-    <div class="pagina_principal">
+    <header>
+        <p>Estoque</p>
+        <div class="pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="pesquisa" placeholder="pesquisa...">
+        </div>
 
-        <!-- Conteúdo Principal -->
-        <div id="conteudo_principal">
-            <div id="usuario_info">
-                <div class="pesquisa">
-                    <input type="search" name="pesquisa" placeholder="pesquisa...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <img src="imagens/avatar.png" alt="Bryan Doe">
-                <p>Bryan Doe <br> Admin</p>
-            </div>
+        <button class="btn"> <i class="fa-solid fa-circle-plus"></i> Adicionar Produto</button>
 
-            
-            
-            <!-- Área onde o gráfico será gerado pelo back-end -->
-        
-        <main>
-            <h1 class="title">Lista de produtos</h1>
-            <div class="product-list">
-            <table>
-              <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Code</th>
-                        <th>Type</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Image</th>
-                    </tr>
-             </thead>
-                <tbody>
-                    <tr>
-                        <td>Macbook Pro</td>
-                        <td>#0001</td>
-                        <td>Laptop</td>
-                        <td>$1,241</td>
-                        <td>44</td>
-                        <td><div class="product-image" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/c4dffc00-551e-483c-bb1d-b7918f611e04.png');"></div></td>
-                    </tr>
-                    <tr>
-                        <td>iPhone 14 pro</td>
-                        <td>#0002</td>
-                        <td>Phone</td>
-                        <td>$1,499</td>
-                        <td>23</td>
-                        <td><div class="product-image" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/78ed3d88-cd8d-4dbf-8dab-cf6bf329941c.png');"></div></td>
-                    </tr>
-                </tbody>
-          </table>
-        </main>
-            </div>
-
-            <!-- Parte Geral (Menu lateral) -->
-            <div id="geral">
-                <ul>
-                    <h1> Geral</h1>
-
-                    <li>
-                        <a href="../Tela_estoque.html">Relatório</a></li>
-                    <li>
-                        <a href="../Tela_estoque.html">Estoque</a></li>
-                    </li>
-                    <li>
-                        <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
-                    </li>
-                    <li>
-                        <a href="../Tela_financeiro.html">Financeiro</a></li>
-                    </li>
-                </ul>
+        <div id="dados_usuario">
+            <img src="../imagens/Name.png" alt="Bryan Doe">
+            <div id="dados_usuario_nomes">
+                <h1>Usuario <br></h1>
+                <p>admin</p>
             </div>
         </div>
+    </header>
+    <div id="divisao"></div>
+    <div class="pagina">
+        <!-- Conteúdo principal -->
+        <div class="meio">
+            <h1>Lista de Produtos</h1>
+            <div id="tabela-pagi">
+                <div class="table-container">
+                    <div class="table-container table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>Produto</th>
+                                    <th>id</th>
+                                    <th>Categoria</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço</th>
+                                    <th>imagem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Macbook Pro</td>
+                                    <td>#0001</td>
+                                    <td>Laptop</td>
+                                    <td>1</td>
+                                    <td>$1,241</td>
+                                    <td><a href="#">View Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Macbook Pro</td>
+                                    <td>#0001</td>
+                                    <td>Laptop</td>
+                                    <td>1</td>
+                                    <td>$1,241</td>
+                                    <td><a href="#">View Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Macbook Pro</td>
+                                    <td>#0001</td>
+                                    <td>Laptop</td>
+                                    <td>1</td>
+                                    <td>$1,241</td>
+                                    <td><a href="#">View Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Macbook Pro</td>
+                                    <td>#0001</td>
+                                    <td>Laptop</td>
+                                    <td>1</td>
+                                    <td>$1,241</td>
+                                    <td><a href="#">View Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Macbook Pro</td>
+                                    <td>#0001</td>
+                                    <td>Laptop</td>
+                                    <td>1</td>
+                                    <td>$1,241</td>
+                                    <td><a href="#">View Invoice</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h2>Atividades Recentes</h2>
+                <div id="vendas">
+                    <div class="status_venda">
+                        <p></p>
+                        <p></p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="status_venda">
+                        <p></p>
+                        <p></p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="status_venda">
+                        <p></p>
+                        <p></p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="status_venda">
+                        <p></p>
+                        <p></p>
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- Barra lateral para links -->
+        <div class="barra_lateral">
+            <ul>
+                <h1> Geral</h1>
+
+                <li>
+                    <a href="../Tela_estoque.html">Relatório</a></li>
+                <li>
+                    <a href="../Tela_estoque.html">Estoque</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_financeiro.html">Financeiro</a></li>
+                </li>
+            </ul>
+        </div>
     </div>
+
 </body>
 </html>

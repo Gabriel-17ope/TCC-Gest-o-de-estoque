@@ -4,42 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fornecedor - Sistema de Gerenciamento de Estoque</title>
-    <link rel="stylesheet" href="/static/css/">
+    <link rel="stylesheet" href="/static/css/estoque_cadastro.css">
+    <link rel="stylesheet" href="/static/css/estilos_principal.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Cadastro de Fornecedor</h1>
-        </header>
-        <main>
-            <form action="dashboard.html" method="post" enctype="multipart/form-data">
-                <div class="input-group">
-                    <label for="razaoSocial">Razão Social</label>
-                    <input type="text" id="razaoSocial" name="razaoSocial" required>
-                </div>
-                <div class="input-group">
-                    <label for="cnpj">CNPJ</label>
-                    <input type="text" id="cnpj" name="cnpj" required>
-                </div>
-                <div class="input-group">
-                    <label for="nome">Nome Fantasia</label>
-                    <input type="text" id="nome" name="nomeFantasia" required>
-                </div>
-                <div class="input-group">
-                    <label for="contato">Telefone Contato</label>
-                    <input type="tel" id="contato" name="contato" required>
-                </div>
-                <div class="input-group">
-                    <label for="emailContato">E-mail Contato</label>
-                    <input type="email" id="emailContato" name="emailContato" required>
-                </div>
-                <div class="input-group">
-                    <label for="imagemFornecedor">Insira Imagem do Fornecedor</label>
-                    <input type="file" id="imagemFornecedor" name="imagemFornecedor" accept="image/*" required>
-                </div>
-                <button type="submit" class="btn">Cadastrar Fornecedor</button>
-            </form>
-        </main>
+    <header>
+        <p>Fornecedor</p>
+        <div class="pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="pesquisa" placeholder="pesquisa...">
+        </div>
+
+        <div id="dados_usuario">
+            <img src="../imagens/Name.png" alt="Bryan Doe">
+            <div id="dados_usuario_nomes">
+                <h1>Usuario <br></h1>
+                <p>admin</p>
+            </div>
+    </header>
+    <div class="pagina">
+        <div id="arquitetura">
+            <main>
+                <form action="dashboard.html" method="post" enctype="multipart/form-data">
+                    <div class="input-group">
+                        <label for="razaoSocial">Razão Social</label>
+                        <input type="text" id="razaoSocial" name="razaoSocial" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="nome">Nome Fantasia</label>
+                        <input type="text" id="nome" name="nomeFantasia" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="contato">Telefone Contato</label>
+                        <input type="tel" id="contato" name="contato" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="emailContato">E-mail Contato</label>
+                        <input type="email" id="emailContato" name="emailContato" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="imagemFornecedor">Insira Imagem do Fornecedor</label>
+                        <input type="file" id="imagemFornecedor" name="imagemFornecedor" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn">Cadastrar Fornecedor</button>
+                </form>
+            </main>
+        </div>
+        <div class="barra_lateral">
+            <ul>
+                <h1> Geral</h1>
+
+                <li>
+                    <a href="../Tela_estoque.html">Relatório</a></li>
+                <li>
+                    <a href="../Tela_estoque.html">Estoque</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_financeiro.html">Financeiro</a></li>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
