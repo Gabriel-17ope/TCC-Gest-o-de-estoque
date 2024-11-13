@@ -1,6 +1,5 @@
 /* Elementos gerais */
 body {
-    background-color: rgba(215, 233, 255, 0.88);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 98%;
     color: white;
 }
 
@@ -105,7 +103,6 @@ body {
     justify-content: space-between; /* Distribui o espaço entre a barra de pesquisa e o avatar */
     padding: 20px;
     width: 110%;
-    background-color: #F7F7F7;
     position: absolute;
     top: 0;
     right: 0;
