@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+#arquitetura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.input-group{
+    display:flex;
+    flex-direction: row;
+    width: 500px;
+    padding: 20px;
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+}
+.inputs label{
+    padding-bottom: 15px;
+}
+.inputs input{
+    border: none;
+    width: 170px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+}
+#imagemProduto{
+    background: none;
+    border: none;
+}

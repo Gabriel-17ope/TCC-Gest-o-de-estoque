@@ -4,42 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produto - Sistema de Gerenciamento de Estoque</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/static/css/estoque_cadastro.css">
+    <link rel="stylesheet" href="/static/css/estilos_principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Cadastro de Produto</h1>
-        </header>
-        <main>
-            <form action="dashboard.html" method="post" enctype="multipart/form-data">
-                <div class="input-group">
-                    <label for="nomeProduto">Nome do Produto</label>
-                    <input type="text" id="nomeProduto" name="nomeProduto" required>
-                </div>
-                <div class="input-group">
-                    <label for="valorProduto">Valor do Produto (R$)</label>
-                    <input type="number" id="valorProduto" name="valorProduto" required>
-                </div>
-                <div class="input-group">
-                    <label for="fornecedor">Fornecedor</label>
-                    <select id="fornecedor" name="fornecedor" required>
-                        <option value="fornecedor1">Fornecedor 1</option>
-                        <option value="fornecedor2">Fornecedor 2</option>
-                        <option value="fornecedor3">Fornecedor 3</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="quantidade">Quantidade</label>
-                    <input type="number" id="quantidade" name="quantidade" required>
-                </div>
-                <div class="input-group">
-                    <label for="imagemProduto">Insira Imagem do Produto</label>
-                    <input type="file" id="imagemProduto" name="imagemProduto" accept="image/*" required>
-                </div>
-                <button type="submit" class="btn">Cadastrar Produto</button>
-            </form>
-        </main>
+    <header>
+        <p>Financeiro</p>
+        <div class="pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="pesquisa" placeholder="pesquisa...">
+        </div>
+
+        <div id="dados_usuario">
+            <img src="../imagens/Name.png" alt="Bryan Doe">
+            <div id="dados_usuario_nomes">
+                <h1>Usuario <br></h1>
+                <p>admin</p>
+            </div>
+        </div>
+    </header>
+    <h3>Cadastro de Produto</h3>
+    <div class="pagina">
+        <div id="arquitetura">
+            <main>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="input-group">
+                        <div class="inputs">
+                            <label for="nomeProduto">Nome do Produto</label>
+                            <input type="text" id="nomeProduto" name="nome" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="valorProduto">Valor do Produto (R$)</label>
+                            <input type="number" id="valorProduto" name="preco" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="inputs">
+                            <label for="fornecedor">Fornecedor</label>
+                            <select id="fornecedor" name="fornecedor_id" required>
+                                <option value="fornecedor1">Fornecedor 1</option>
+                                <option value="fornecedor2">Fornecedor 2</option>
+                                <option value="fornecedor3">Fornecedor 3</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="quantidade">Quantidade</label>
+                            <input type="number" id="quantidade" name="quantidade" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="inputs">
+                            <label for="imagemProduto">Insira Imagem do Produto (opcional)</label>
+                            <input type="file" id="imagemProduto" name="imagem" accept="image/*">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Cadastrar Produto</button>
+                </form>
+                
+            </main>
+        </div>
+        <div class="barra_lateral">
+            <ul>
+                <h1> Geral</h1>
+
+                <li>
+                    <a href="../Tela_estoque.html">Relatório</a></li>
+                <li>
+                    <a href="../Tela_estoque.html">Estoque</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
+                </li>
+                <li>
+                    <a href="../Tela_financeiro.html">Financeiro</a></li>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

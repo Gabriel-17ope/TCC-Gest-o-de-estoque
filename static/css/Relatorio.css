@@ -1,0 +1,79 @@
+#conteudo{
+    width: 70%;
+
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+div button{
+    width: 100px;
+    height: 20px;
+}
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#Caixa_op {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.relatorios_ops {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.relatorios_ops button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background: rgba(4, 180, 252, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(4, 140, 252, 1);
+}
+#vendas {
+    display: flex;
+    gap: 20px;
+}
+
+.status_venda {
+    background: rgba(244, 245, 252, 1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#visualizacoes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#visualizacoes{
+    display: flex;
+    flex-direction: row;
+}
+#rel_desenpenho{
+    display: flex;
+    flex-direction: column;
+}
