@@ -5,36 +5,149 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background: linear-gradient(rgba(65, 84, 251, 1), rgba(156, 119, 236, 1));
+    font-family: Arial, sans-serif;
 }
-#arquitetura{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-}
-.input-group{
-    display:flex;
-    flex-direction: row;
-    width: 500px;
-    padding: 20px;
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    height: 70px;
 }
-.inputs{
+
+header p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa i {
+    margin-right: 10px;
+}
+
+.pesquisa input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#dados_usuario {
+    display: flex;
+    align-items: center;
+}
+
+#dados_usuario img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#dados_usuario h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#dados_usuario p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.pagina {
+    display: flex;
+    height: calc(100vh - 70px);
+    width: 100%;
+}
+
+#arquitetura {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-group {
     display: flex;
     flex-direction: column;
-    padding-right: 150px;
+    margin-bottom: 20px;
 }
-.inputs label{
-    padding-bottom: 15px;
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
 }
-.inputs input{
-    border: none;
-    width: 170px;
-    height: 30px;
-    background: white;
+
+.input-group input {
+    padding: 10px;
+    font-size: 14px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
-#imagemProduto{
-    background: none;
+
+button.btn {
+    background: rgba(4, 180, 252, 1);
+    color: white;
+    font-weight: 700;
     border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button.btn:hover {
+    background: rgba(3, 150, 220, 1);
+}
+
+.barra_lateral {
+    width: 300px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.barra_lateral h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.barra_lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra_lateral li {
+    margin-bottom: 10px;
+}
+
+.barra_lateral a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.barra_lateral a:hover {
+    text-decoration: underline;
 }

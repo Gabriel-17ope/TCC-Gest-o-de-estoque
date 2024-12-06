@@ -1,5 +1,4 @@
 # routes/financeiro.py
-
 from flask import Blueprint, render_template
 
 # Criando o blueprint para financeiro

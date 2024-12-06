@@ -3,21 +3,21 @@ from werkzeug.utils import secure_filename
 import uuid
 from firebase_config import bucket, db  # Importa o bucket e o db corretamente
 
-fornecedor_blueprint = Blueprint('fornecedor', __name__)
 
-# Rota para a tela principal de fornecedor
-@fornecedor_blueprint.route('/')
-def tela_fornecedor():
-    return render_template('Fornecedor/fornecedor.html')
+estoque_blueprint = Blueprint('estoque', __name__, template_folder='templates')
 
-# Rota para a tela principal de fornecedor
-@fornecedor_blueprint.route('/cadastro', methods=['GET', 'POST'])
-def cadastrar_fornecedor():
+@estoque_blueprint.route('/')  # Definindo a raiz da rota como '/'
+def tela_estoque():
+    return render_template('Estoque/Tela_estoque.html')
+
+@estoque_blueprint.route('/cadastro',methods=['GET','POST'])
+def tela_estoque_cadastro():
     if request.method == 'POST':
-        razao_social = request.form.get('razaoSocial')
-        cnpj = request.form.get('cnpj')
-        nome_fantasia = request.form.get('nomeFantasia')
-        imagem = request.files.get('imagemFornecedor')
+        nomeProduto = request.form.get('nomeProduto')
+        valorProduto = request.form.get('valorProduto')
+        nome_fantasia = request.form.get('quantidade')
+
+        imagemProduto = request.files.get('imagemProduto')
 
         # Verifica se todos os campos foram preenchidos
         if not razao_social or not cnpj or not nome_fantasia or not imagem:
@@ -72,5 +72,3 @@ def cadastrar_fornecedor():
             return render_template('Fornecedor/Tela_fornecedor_cadastro.html')
 
     return render_template('Fornecedor/Tela_fornecedor_cadastro.html')
-
-

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fornecedor - Sistema de Gerenciamento de Estoque</title>
     <link rel="stylesheet" href="/static/css/estoque_cadastro.css">
-    <link rel="stylesheet" href="/static/css/estilos_principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -16,16 +16,17 @@
         </div>
 
         <div id="dados_usuario">
-            <img src="../imagens/Name.png" alt="Bryan Doe">
+            <img src="../static/imagens/Name.png" alt="Bryan Doe">
             <div id="dados_usuario_nomes">
                 <h1>Usuario <br></h1>
                 <p>admin</p>
             </div>
+        </div>
     </header>
     <div class="pagina">
         <div id="arquitetura">
             <main>
-                <form action="dashboard.html" method="post" enctype="multipart/form-data">
+                <form action="{{ url_for('fornecedor.cadastrar_fornecedor') }}" method="post" enctype="multipart/form-data">
                     <div class="input-group">
                         <label for="razaoSocial">Razão Social</label>
                         <input type="text" id="razaoSocial" name="razaoSocial" required>
@@ -57,20 +58,21 @@
         <div class="barra_lateral">
             <ul>
                 <h1> Geral</h1>
-
-                <li>
-                    <a href="../Tela_estoque.html">Relatório</a></li>
-                <li>
-                    <a href="../Tela_estoque.html">Estoque</a></li>
-                </li>
-                <li>
-                    <a href="../Tela_fornecedor_cadastro.html">Fornecedor</a></li>
-                </li>
-                <li>
-                    <a href="../Tela_financeiro.html">Financeiro</a></li>
-                </li>
+                <li><a href="/relatorio">Relatório</a></li>
+                <li><a href="/estoque">Estoque</a></li>
+                <li><a href="/fornecedor">Fornecedor</a></li>
+                <li><a href="/financeiro">Financeiro</a></li>
             </ul>
         </div>
     </div>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        <ul>
+        {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
 </body>
 </html>
