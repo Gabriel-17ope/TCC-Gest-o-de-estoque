@@ -1,59 +1,44 @@
-# TCC-Gest-o-de-estoque
-# TCC de desenvolvimento de sistemas
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
+Sistema de Gerenciamento de Estoque
+Resumo do Trabalho
+O Sistema de Gerenciamento de Estoque é uma aplicação desenvolvida para auxiliar micro e pequenas empresas no controle eficiente de seus estoques. O sistema permite o cadastro e gerenciamento de produtos e fornecedores, além de registrar movimentações de entrada e saída. A ferramenta visa proporcionar uma experiência simples e prática, utilizando tecnologias modernas para atender às demandas de gestão de estoque.
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+Embora em estágio inicial de desenvolvimento, o sistema já conta com funcionalidades fundamentais para o gerenciamento, com futuras expansões planejadas para incluir login, integração com sistemas externos e categorização de produtos.
 
-.login-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
+Explicação Técnica do Código
+Estrutura do Projeto
+O código segue uma arquitetura modular para facilitar a escalabilidade e manutenção:
 
-.login-box h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #218838;
-}
+Backend: Desenvolvido com Flask (Python), gerencia as operações do sistema e a comunicação com o banco de dados.
+Frontend: Utiliza HTML5, CSS3 e React para a interface do usuário, oferecendo uma experiência responsiva e intuitiva.
+Banco de Dados: Implementado com o Cloud Firestore, que armazena informações de produtos e fornecedores de forma segura e acessível.
+Funcionalidades Implementadas
+Cadastro e Gerenciamento:
+Permite o cadastro, edição e exclusão de produtos e fornecedores.
+Relatórios:
+Gera relatórios básicos de movimentação e estoque em formatos legíveis diretamente na interface.
+Como Executar o Projeto
+Requisitos:
+Python 3.x
+Node.js
+Gerenciador de pacotes npm ou yarn
+Passos para Inicialização:
+Clone este repositório.
+Instale as dependências do back-end:
+bash
+Copiar código
+pip install -r requirements.txt  
+Instale as dependências do front-end:
+bash
+Copiar código
+cd frontend  
+npm install  
+Configure o arquivo .env com as credenciais do banco de dados.
+Inicie o back-end:
+bash
+Copiar código
+flask run  
+Inicie o front-end:
+bash
+Copiar código
+npm start  
+Acesse o sistema no navegador através de http://localhost:3000.
