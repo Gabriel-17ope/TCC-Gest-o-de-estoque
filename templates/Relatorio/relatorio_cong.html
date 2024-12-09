@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Sistema de Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="/static/css/Relatorio_conf.css">
+</head>
+<body>
+    <header>
+        <p>Relatórios do Sistema</p>
+        <div id="dados_usuario">
+            <img src="../static/imagens/Name.png" alt="Bryan Doe">
+            <div id="dados_usuario_nomes">
+                <h1>Bryan Doe</h1>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <!-- Campos de Período -->
+        <div class="campo-periodo">
+            <h1>Definir Período do Relatório</h1>
+            <form method="POST">
+                <div class="inputs">
+                    <label for="data-inicio">Data de Início:</label>
+                    <input type="date" id="data-inicio" name="data-inicio" required>
+                    <label for="data-fim">Data de Fim:</label>
+                    <input type="date" id="data-fim" name="data-fim" required>
+                    <label for="tipo-relatorio">Tipo de Relatório:</label>
+                    <select id="tipo-relatorio" name="tipo-relatorio" required>
+                        <option value="total">Total</option>
+                        <option value="fornecedor">Por Fornecedor</option>
+                    </select>
+                    <label for="fornecedor" id="label-fornecedor" style="display: none;">Fornecedor:</label>
+                    <input type="text" id="fornecedor" name="fornecedor" style="display: none;">
+                </div>
+                <button class="btn" type="submit">Gerar Relatório</button>
+            </form>
+        </div>
+
+        <!-- Div Geral -->
+        <div id="geral" class="barra-lateral">
+            <h1>Geral</h1>
+            <ul>
+                <li><a href="/relatorio">Relatório</a></li>
+                <li><a href="/estoque">Estoque</a></li>
+                <li><a href="/fornecedor">Fornecedores</a></li>
+                <li><a href="/financeiro">Financeiro</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/Relatorio_conf.js') }}"></script>
+</body>
+</html>

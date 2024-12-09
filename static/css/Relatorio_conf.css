@@ -1,0 +1,151 @@
+/* Estilos Gerais */
+body {
+    background: linear-gradient(rgba(65, 84, 251, 1), rgba(156, 119, 236, 1));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#dados_usuario {
+    display: flex;
+    align-items: center;
+}
+
+#dados_usuario img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#dados_usuario h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#dados_usuario p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Página */
+.pagina {
+    display: flex;
+    height: calc(100vh - 70px);
+    width: 100%;
+}
+
+/* Campos de Período */
+.campo-periodo {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.campo-periodo h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.inputs label {
+    font-size: 16px;
+    color: #333;
+}
+
+.inputs input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 16px);
+    max-width: 300px;
+}
+
+.btn {
+    background: rgba(4, 180, 252, 1);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: rgba(3, 150, 220, 1);
+}
+
+/* Barra Lateral Geral */
+.barra-lateral {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.barra-lateral h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.barra-lateral a:hover {
+    text-decoration: underline;
+}

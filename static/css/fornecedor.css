@@ -1,0 +1,65 @@
+/* Estilização para o contêiner principal */
+.container-fornecedores {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha ao topo */
+    width: 100%; /* Garante que o contêiner ocupe todo o espaço */
+    gap: 20px; /* Espaço entre os elementos */
+    margin-top: 20px;
+}
+
+/* Tabela de fornecedores */
+.tabela-fornecedores {
+    width: 70%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.tabela-fornecedores th, 
+.tabela-fornecedores td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.tabela-fornecedores th {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+/* Div Geral */
+.geral-fornecedores {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.geral-fornecedores h1 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.geral-fornecedores ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.geral-fornecedores li {
+    margin: 10px 0;
+}
+
+.geral-fornecedores a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.geral-fornecedores a:hover {
+    text-decoration: underline;
+}

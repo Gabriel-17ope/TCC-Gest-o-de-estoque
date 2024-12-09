@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornecedores</title>
+    <link rel="stylesheet" href="/static/css/estilos_principal.css">
+    <link rel="stylesheet" href="/static/css/fornecedor.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p>Estoque</p>
+        <div class="pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="pesquisa" placeholder="Pesquisar...">
+        </div>
+
+        <button class="btn" id="btnAdicionarFornecedor">
+            <i class="fa-solid fa-circle-plus"></i> Adicionar Fornecedor
+        </button>
+
+        <div id="dados_usuario">
+            <img src="../imagens/Name.png" alt="Foto do usuário">
+            <div id="dados_usuario_nomes">
+                <h1>Usuário</h1>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main class="pagina-fornecedores">
+        <div class="container-fornecedores">
+            <!-- Tabela -->
+            <table class="tabela-fornecedores">
+                <thead>
+                    <tr>
+                        <th>Nome do Fornecedor</th>
+                        <th>Email</th>
+                        <th>Número de Contato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>apple@gmail.com</td>
+                        <td>+63 123 4243</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung</td>
+                        <td>samsung@gmail.com</td>
+                        <td>+63 133 3453</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Div Geral -->
+            <div id="geral" class="geral-fornecedores">
+                <ul>
+                    <h1> Geral</h1>
+
+                    <li>
+                        <a href="/relatorio">Relatório</a></li>
+                    <li>
+                        <a href="/estoque">Estoque</a></li>
+                    </li>
+                    <li>
+                        <a href="/fornecedor">Fornecedor</a></li>
+                    </li>
+                    <li>
+                        <a href="/financeiro">Financeiro</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+<script src="/static/js/fornecedor.js"></script>
+</body>
+</html>
