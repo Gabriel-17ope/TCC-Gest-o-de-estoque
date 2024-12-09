@@ -1,4 +1,4 @@
-Sistema de Gerenciamento de Estoque
+
 Resumo do Trabalho
 O Sistema de Gerenciamento de Estoque é uma aplicação desenvolvida para auxiliar micro e pequenas empresas no controle eficiente de seus estoques. O sistema permite o cadastro e gerenciamento de produtos e fornecedores, além de registrar movimentações de entrada e saída. A ferramenta visa proporcionar uma experiência simples e prática, utilizando tecnologias modernas para atender às demandas de gestão de estoque.
 
